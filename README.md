@@ -1,6 +1,5 @@
 # HackTrin2016
 
-# HackTrin2016
 
 Collaborators: Vaed Prasad, Henry Hunt, Grant Goldenberg, Justin Burton
 
