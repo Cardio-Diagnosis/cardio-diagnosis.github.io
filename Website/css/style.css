@@ -6,7 +6,7 @@
 #navLogo {
 	height: 45px;
 	width: 52.4px;
-	margin-top: -5px;
+	margin-top: -10px;
 	margin-left: 10px;
 	margin-right: -10px;
 }
@@ -19,5 +19,12 @@
 }
 
 #devIntro {
-	margin-top: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.carousel-inner > .item {
+    height: 550px;
+    background-size: cover;
+    background-position: center;
 }
