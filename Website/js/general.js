@@ -8,5 +8,6 @@ function navBar() {
 		
 		if(location.pathname.includes("index")) $("#indTab").addClass("active")
 		else if(location.pathname.includes("secondary")) $("#sTab").addClass("active")
+		else if(location.pathname.includes("development")) $("#dTab").addClass("active")
 	});
 }
