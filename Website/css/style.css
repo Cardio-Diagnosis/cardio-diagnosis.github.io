@@ -1,9 +1,11 @@
 .jumbotron {
 	height: 300px;
+	text-align: center;
 }
 
 #navLogo {
 	height: 47px;
 	width: 106px;
 	margin-top: -17px;
+	margin-left: 10px;
 }
