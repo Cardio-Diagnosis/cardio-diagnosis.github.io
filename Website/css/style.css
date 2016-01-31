@@ -28,3 +28,7 @@
     background-size: cover;
     background-position: center;
 }
+
+#carouselDiv {
+	margin-bottom: 50px;
+}
