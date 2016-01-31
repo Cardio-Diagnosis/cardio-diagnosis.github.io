@@ -2,7 +2,10 @@
 int pulsePin = 1;                 
 int blinkPin = 13;                
 int fadePin = 5;                  
-int fadeRate = 0;                 
+int fadeRate = 0; 
+float locMax = 0;
+float locMin = MAX_INT;
+int count = 0;               
 
 // volatile variables
 volatile int BPM;                   
@@ -24,7 +27,16 @@ void loop(){
   int sensorValue = analogRead(A0);
   float voltage = sensorValue * (18.0 / 1023.0);
   Serial.print(voltage);
-  
+  if(count < 4800)
+  {
+    locMin = MAX_INT;
+    locMax = 0;
+  }
+  else if(locMax < voltage)
+    locMax = voltage;
+  else if(locMin > voltage)
+    locMin = voltage;
+    
     serialOutput() ;       
     
   if (QS == true){     
