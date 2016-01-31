@@ -3,25 +3,25 @@
 
 Collaborators: Vaed Prasad, Henry Hunt, Grant Goldenberg, Justin Burton
 
-Inspiration
+Inspiration:
 The inspiration was to create a prototype of a product that diagnosis patients with different heart related illnesses.
 
-What it does
+What it does:
 Cardio Kit is a sleeve and pulse sensor that allows users to detect heart rate and muscle activity. By analyzing the heart beat trends and rates we can determine an accurate diagnosis for the user.
 
-How I built it
+How I built it:
 The program runs off of Arduino and detects if a users heart rate is abnormally high for a certain activity. Through this information we can accurately diagnosis patients with heart related diseases such as V-Tac. We also created a website to display the product and the development which will eventually be used to sell future products.
 
-Challenges I ran into
+Challenges I ran into:
 We had to correctly wire and program the Arduino board to detect heart pulse and muscle activity and utilize the information to make an accurate diagnosis.
 
-Accomplishments that I'm proud of
+Accomplishments that I'm proud of:
 We had to use a hot glue gun to construct our own sleeve and hand-sew the sleeve together. We also soldered all the wires from the Arduino board. We were also able to analyze two different sets of data to make a diagnosis: Muscle Activity and Pulse.
 
-What I learned
+What I learned:
 We learned how to wire an Arduino board, create a pulse sleeve, and build a website.
 
-What's next for Cardio Kit
+What's next for Cardio Kit:
 Creating further prototypes and making more accurate sensors. We would like to expand the number of diseases that Cardio-Kit can detect.
 
 
