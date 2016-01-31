@@ -1,5 +1,7 @@
-int cal = 2;
-void serialOutput(){   
+int cal = 1.6;
+boolean exer = false;
+void serialOutput(boolean exercise){   
+  exer = exercise;
  if (serialVisual == true){  
      arduinoSerialMonitorVisual('-', Signal);   
  } 
@@ -16,8 +18,11 @@ void serialOutputWhenBeatHappens(){
     Serial.print("  \n");
      if(BPM/cal > 100)
     {
-      for(int i = 0; i < 3; i++)
-      Serial.print("V-TAC WARARING V-TAC \n");
+      if(!exer)
+      {
+        for(int i = 0; i < 3; i++)
+        Serial.print("V-TAC WARNING V-TAC \n");
+      }
     }
  } else{
         sendDataToSerial('B',BPM);   
@@ -76,5 +81,6 @@ void arduinoSerialMonitorVisual(char symbol, int data ){
     break;
   } 
 }
+
 
 

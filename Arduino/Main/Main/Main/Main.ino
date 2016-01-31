@@ -4,7 +4,7 @@ int blinkPin = 13;
 int fadePin = 5;                  
 int fadeRate = 0; 
 float locMax = 0;
-float locMin = MAX_INT;
+float locMin = 999999;
 int count = 0;               
 
 // volatile variables
@@ -27,9 +27,9 @@ void loop(){
   int sensorValue = analogRead(A0);
   float voltage = sensorValue * (18.0 / 1023.0);
   Serial.print(voltage);
-  if(count < 4800)
+  if(count < 19200)
   {
-    locMin = MAX_INT;
+    locMin = 99999;
     locMax = 0;
   }
   else if(locMax < voltage)
@@ -37,7 +37,7 @@ void loop(){
   else if(locMin > voltage)
     locMin = voltage;
     
-    serialOutput() ;       
+    serialOutput(locMax-locMin < 4) ;       
     
   if (QS == true){     
         digitalWrite(blinkPin,HIGH);      
