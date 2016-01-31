@@ -4,10 +4,11 @@
 }
 
 #navLogo {
-	height: 40px;
-	width: 40px;
+	height: 45px;
+	width: 52.4px;
 	margin-top: -5px;
 	margin-left: 10px;
+	margin-right: -10px;
 }
 
 .bigLogo {
