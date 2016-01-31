@@ -23,7 +23,7 @@ Itinerary:
 
 9:30am-12:30pm: Coding and workshops (HTML/CSS, Arduino, p5.js).
 
-12:30pm-1:00pm: Lunch.
+12:30pm-1:00pm: Lunch
 
 1:00pm-4:00pm: Coding
 
